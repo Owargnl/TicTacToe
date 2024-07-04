@@ -1,19 +1,33 @@
-.main-grid{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  height: 250px;
-  width: 250px;
-  margin: 30px auto;
-  border: 2px solid #000;
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tic Tac Toe</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class='turn-container'>
+    <h3>Turn For</h3>
+    <div class='turn-box align'>X</div>
+    <div class='turn-box align'>O</div>
+    <div class="bg"></div>
+  </div>
+  <div class="main-grid">
+    <div class="box align">0</div>
+    <div class="box align">1</div>
+    <div class="box align">2</div>
+    <div class="box align">3</div>
+    <div class="box align">4</div>
+    <div class="box align">5</div>
+    <div class="box align">6</div>
+    <div class="box align">7</div>
+    <div class="box align">8</div>
+  </div>
+  <h2 id='results'>X Wins!</h2>
+  <button id='play-again'>Play Again</button>    
+     
+  <script src="script.js"></script>
+</body>
 
-.box{
-  cursor: pointer;
-  font-size: 2rem;
-  font-weight: 700;
-  border: 2px solid #000;
-}
-
-.box:hover{
-  background-color: #9DDFFF;
+</html>
